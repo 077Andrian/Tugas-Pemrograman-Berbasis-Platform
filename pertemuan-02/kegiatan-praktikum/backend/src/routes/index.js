@@ -1,5 +1,9 @@
+
 const express = require('express');
 const jadwalRouter = require('./jadwal');
+const pesertaRouter = require('./peserta');
+const authRouter = require('./auth');
+const adminRouter = require('./admin');
 
 const router = express.Router();
 
@@ -12,5 +16,8 @@ router.get('/', (_req, res) => {
 });
 
 router.use('/jadwal', jadwalRouter);
+router.use('/peserta', pesertaRouter);
+router.use('/auth', authRouter);
+router.use('/admin', adminRouter);
 
 module.exports = router;

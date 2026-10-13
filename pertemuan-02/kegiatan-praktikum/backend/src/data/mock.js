@@ -1,3 +1,4 @@
+
 const jadwal = [
   { id: 1, mataKuliah: 'Pemrograman Berbasis Platform', status: 'aktif' },
   { id: 2, mataKuliah: 'Basis Data', status: 'aktif' },
@@ -10,4 +11,23 @@ const peserta = [
   { id: 103, jadwalId: 2, nim: '2026003', nama: 'Citra' },
 ];
 
-module.exports = { jadwal, peserta };
+const users = [
+  {
+    id: 1,
+    nim: '2026001',
+    nama: 'Admin Lab',
+    role: 'ADMIN',
+    passwordHash:
+      '$2a$10$VqfEmRTtYiy//imL6395q.o4UGUTl2fjMJNuU/BekaO6JwQu25Vhe',
+  },
+  {
+    id: 2,
+    nim: '2026002',
+    nama: 'Mahasiswa',
+    role: 'MAHASISWA',
+    passwordHash:
+      '$2a$10$tO9pdi5NSib2Mb.n3hY1WOIxoxEjLg11SUgEoMtqd1TNGzaA/KoHm',
+  },
+];
+
+module.exports = { jadwal, peserta, users };
