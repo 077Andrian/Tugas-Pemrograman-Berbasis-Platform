@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Mahasiswa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-slate-100 font-sans text-slate-800">
+  <nav class="flex flex-col gap-3 bg-blue-700 px-6 py-4 text-white md:flex-row md:items-center md:justify-between">
+    <h1 class="text-xl font-bold">Profil Mahasiswa</h1>
+
+    <div class="flex flex-wrap gap-4">
+      <a href="#beranda" class="hover:text-yellow-300">Beranda</a>
+      <a href="#profil" class="hover:text-yellow-300">Profil</a>
+      <a href="#kontak" class="hover:text-yellow-300">Kontak</a>
+    </div>
+  </nav>
+
+  <main class="mx-auto max-w-6xl space-y-10 px-6 py-10">
+    <section id="beranda" class="flex flex-col gap-6 rounded-2xl bg-white p-8 shadow-md md:flex-row md:items-center md:justify-between">
+      <div>
+        <p class="mb-2 font-semibold text-blue-600">Mahasiswa Informatika</p>
+        <h2 class="mb-4 text-3xl font-bold md:text-4xl">
+          Selamat Datang!
+        </h2>
+        <p class="max-w-xl leading-relaxed text-slate-600">
+          Ini adalah halaman profil mahasiswa untuk menampilkan
+          biodata, jadwal kuliah, dan kegiatan selama perkuliahan.
+        </p>
+      </div>
+
+      <a href="#profil" class="inline-block self-start rounded-lg bg-blue-600 px-5 py-3 text-center text-white hover:bg-blue-700 md:self-center">
+        Lihat Informasi
+      </a>
+    </section>
+
+    <section id="profil">
+      <h2 class="mb-5 text-2xl font-bold">Informasi Mahasiswa</h2>
+
+      <div class="grid grid-cols-1 gap-5 md:grid-cols-3">
+        <article class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+          <h3 class="mb-3 text-xl font-bold text-blue-700">Biodata</h3>
+          <p class="mb-2 text-slate-600">Nama: Moh Andrian Maulana</p>
+          <p class="mb-4 text-slate-600">NIM: 2024520077</p>
+          <a href="#kontak" class="font-semibold text-blue-600 hover:text-blue-800">Lihat profil →</a>
+        </article>
+
+        <article class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+          <h3 class="mb-3 text-xl font-bold text-blue-700">Jadwal Kuliah</h3>
+          <p class="mb-4 leading-relaxed text-slate-600">
+            Informasi jadwal perkuliahan membantu mengatur waktu
+            belajar dan menyelesaikan tugas.
+          </p>
+          <a href="#kontak" class="font-semibold text-blue-600 hover:text-blue-800">Lihat jadwal →</a>
+        </article>
+
+        <article class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+          <h3 class="mb-3 text-xl font-bold text-blue-700">Kegiatan</h3>
+          <p class="mb-4 leading-relaxed text-slate-600">
+            Berisi kegiatan belajar, praktikum, dan pengerjaan
+            proyek selama kuliah.
+          </p>
+          <a href="#kontak" class="font-semibold text-blue-600 hover:text-blue-800">Lihat kegiatan →</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="kontak" class="mt-8 bg-slate-800 px-6 py-5 text-center text-sm text-white">
+    <p>Moh Andrian Maulana · NIM 2024520077</p>
+    <p class="mt-1 text-slate-300">Tugas Mandiri 2 — Pemrograman Berbasis Platform</p>
+  </footer>
+</body>
+</html>
