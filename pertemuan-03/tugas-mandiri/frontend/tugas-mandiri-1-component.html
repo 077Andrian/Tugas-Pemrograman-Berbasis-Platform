@@ -1,0 +1,88 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kartu Biodata - Component Based</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 24px;
+      font-family: Arial, sans-serif;
+      background: #f1f5f9;
+      color: #1e293b;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 340px;
+      margin: 40px auto;
+      padding: 24px;
+      text-align: center;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .photo {
+      width: 110px;
+      height: 110px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #2563eb;
+    }
+
+    .name {
+      margin: 16px 0 8px;
+      font-size: 22px;
+    }
+
+    .nim {
+      margin: 0 0 20px;
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 11px 20px;
+      color: #ffffff;
+      background: #2563eb;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #1d4ed8;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <img
+      class="photo"
+      src="https://placehold.co/220x220/png?text=Foto"
+      alt="Foto biodata"
+    >
+
+    <h1 class="name">Moh Andrian Maulana</h1>
+    <p class="nim">NIM: 2024520077</p>
+
+    <button class="btn" type="button"
+      onclick="alert('Biodata Moh Andrian Maulana')">
+      Lihat Profil
+    </button>
+  </main>
+</body>
+</html>
+```
